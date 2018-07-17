@@ -1,0 +1,14 @@
+<div class="ui raised segment ">
+  <h1 class="ui header"> Form: sku with Builder</h1>
+  <form [formGroup]="myForm"
+  class="ui form">
+    <div class="field">
+    <label for="skuInput">SKU</label>
+    <input type="text"
+    id="skuInput"
+    placeholder="SKu"
+    [formControl]="myForm.controls['sku']">
+  </div>
+  <button type="submit" class="ui button">Submit</button>
+  </form>
+</div>
